@@ -19,7 +19,7 @@
         showDropdown(!dropdown.classList.contains('show'));
       });
 
-      // keyboard support
+      
       profileBtn.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
@@ -29,7 +29,7 @@
         }
       });
 
-      // close if clicked elsewhere
+   
       document.addEventListener('click', (ev) => {
         if (!profileBtn.contains(ev.target)) showDropdown(false);
       });
@@ -39,12 +39,11 @@
       });
     })();
 
-    // Simple theme toggle (keeps header color as default, but toggles body class)
     (function () {
       const themeToggle = document.getElementById('themeToggle');
       themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('light-theme'); // you can add CSS to change theme if desired
-        // small visual feedback toggle icon
+        document.body.classList.toggle('light-theme'); 
+        
         themeToggle.classList.toggle('bx-sun');
       });
     })();

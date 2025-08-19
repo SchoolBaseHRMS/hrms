@@ -1,6 +1,6 @@
-// Pure JS: enable submenu toggles and view switching for dashboard.php
+
 document.addEventListener('DOMContentLoaded', function () {
-  // submenu toggle buttons
+
   const toggles = Array.from(document.querySelectorAll('.toggle-sub'));
   toggles.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const submenu = id ? document.getElementById(id) : null;
       const isOpen = btn.getAttribute('aria-expanded') === 'true';
 
-      // close other submenus (optional)
       toggles.forEach(other => {
         if (other !== btn) {
           const otherId = other.getAttribute('aria-controls');
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
 
-      // toggle this submenu
+    
       btn.setAttribute('aria-expanded', String(!isOpen));
       if (submenu) submenu.hidden = isOpen;
       btn.parentElement.classList.toggle('active', !isOpen);
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (chev) chev.style.transform = !isOpen ? 'rotate(90deg)' : '';
     });
 
-    // keyboard support
+    
     btn.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
@@ -40,19 +39,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // view switching: elements with data-view -> show #view-{name}
+  
   function showView(name) {
     const all = document.querySelectorAll('.view');
     all.forEach(v => v.classList.remove('active'));
     const target = document.getElementById('view-' + name);
     if (target) target.classList.add('active');
-    // update active link styles
+  
     document.querySelectorAll('.menu-item, .submenu-item, .btn[data-view]').forEach(el => {
       el.classList.toggle('active', el.dataset.view === name);
     });
   }
 
-  // hook menu links and submenu items
   document.body.addEventListener('click', function (e) {
     const a = e.target.closest('[data-view]');
     if (!a) return;
@@ -62,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
     showView(view);
   });
 
-  // optional: show overview on load if no active view
   if (!document.querySelector('.view.active')) {
     showView('overview');
   }

@@ -13,7 +13,6 @@
 </head>
 <body>
 
-    <!-- mobile burger toggle -->
     <button id="sidebarToggle" class="burger" aria-label="Toggle navigation" aria-expanded="false">
         <i class='bx bx-menu'></i>
     </button>
@@ -217,7 +216,7 @@
         </ul>
     </div>
 
-    <!-- overlay for mobile when sidebar open -->
+   
     <div id="sidebarOverlay" class="sidebar-overlay" aria-hidden="true"></div>
 
 </body>

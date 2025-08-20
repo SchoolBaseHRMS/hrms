@@ -14,12 +14,6 @@
 <body>
     <header class="main-header">
 
-    <div class="header-center">
-      <label class="search-bar" for="header-search" role="search" aria-label="Site search">
-        <input id="header-search" type="text" placeholder="Search..." />
-        <i class="bx bx-search"></i>
-      </label>
-    </div>
 
     <div class="header-right">
       <nav class="nav-actions">

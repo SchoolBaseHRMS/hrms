@@ -7,20 +7,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/hrms/public/styles/sidebar.css">
+    <link rel="stylesheet" href="/hrms/public/styles/sidebar.css"> 
     <script src="/hrms/public/js/sidebar.js" defer></script>
     <title>Sidebar Dropdown</title>
 </head>
 <body>
-
+    
     <button id="sidebarToggle" class="burger" aria-label="Toggle navigation" aria-expanded="false">
         <i class='bx bx-menu'></i>
     </button>
-
     <div class="sidebar" id="sidebar">
         <div class="logo-details">
             <div class="logo-img"><img src="/hrms/public/img/k.png" alt=""></div>
             <span class="logo_name">Kupal University</span>
+
+             
         </div>
         <ul class="nav-links">
             <li>
@@ -214,10 +215,9 @@
                 </form>
             </li>
         </ul>
+        </section>
     </div>
-
-   
-    <div id="sidebarOverlay" class="sidebar-overlay" aria-hidden="true"></div>
+        
 
 </body>
 </html>

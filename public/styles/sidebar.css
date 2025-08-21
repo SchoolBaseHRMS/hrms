@@ -223,7 +223,7 @@ html { font-size: 16px; }
 }
 
 .sidebar .nav-links li.logout .logout-btn:hover {
-    background: rgba(255,255,255,0.03);
+    background: rgba(255, 255, 255, 0.266);
     border-radius: 6px;
 }
 
@@ -252,11 +252,12 @@ html { font-size: 16px; }
     transition: opacity 180ms ease;
 }
 
+
+
 @media (max-width: 768px) {
     
     .burger { display: block; }
 
-    
     .sidebar {
         transform: translateX(-260px); 
         transition: transform 240ms ease;
@@ -282,4 +283,3 @@ html { font-size: 16px; }
     .sidebar { transform: none; }
     .sidebar-overlay { display: none !important; }
 }
-

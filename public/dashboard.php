@@ -12,10 +12,9 @@ $base = '/hrms/public';
   <title>Kupal University Admin Dashboard</title>
 </head>
 <body>
-  <!-- Sidebar -->
+
   <?php include_once __DIR__ . '/partials/sidebar.php'; ?>
 
-  <!-- Header -->
   <?php include_once __DIR__ . '/partials/header.php'; ?>
 
 </body>

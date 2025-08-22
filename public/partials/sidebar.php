@@ -20,8 +20,6 @@
         <div class="logo-details">
             <div class="logo-img"><img src="/hrms/public/img/k.png" alt=""></div>
             <span class="logo_name">Kupal University</span>
-
-             
         </div>
         <ul class="nav-links">
             <li>

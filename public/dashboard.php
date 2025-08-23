@@ -1,6 +1,6 @@
 <?php
+$base_url = '/hrms/';
 $active = 'dashboard';
-$base = '/hrms/public'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,14 +8,15 @@ $base = '/hrms/public';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="<?php echo $base; ?>/img/k.png" type="image/png">
-  <link rel="stylesheet" href="<?php echo $base; ?>/css/dashboard.css">
+  <link rel="stylesheet" href="/hrms/public/styles/header.css">
+  <link rel="stylesheet" href="/hrms/public/styles/sidebar.css">
+  <link rel="stylesheet" href="/hrms/public/styles/dashboard.css">
   <title>Kupal University Admin Dashboard</title>
 </head>
 <body>
-
-  <?php include_once __DIR__ . '/partials/sidebar.php'; ?>
-
-  <?php include_once __DIR__ . '/partials/header.php'; ?>
-
+  <?php
+    include_once('partials/header.php');
+    include_once('partials/sidebar.php');
+  ?>  
 </body>
 </html>

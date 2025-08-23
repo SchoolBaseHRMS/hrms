@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/hrms/public/styles/sidebar.css"> 
+    <!--<link rel="stylesheet" href="/hrms/public/styles/sidebar.css">--> 
     <script src="/hrms/public/js/sidebar.js" defer></script>
     <title>Sidebar Dropdown</title>
 </head>
@@ -23,7 +23,7 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">
+                <a href="/hrms/public/dashboard.php" class="<?php echo ($active === 'dashboard') ? 'active' : ''; ?>">
                     <i class='bx bx-grid-alt'></i>
                     <span class="link_name">Dashboard</span>
                 </a>
@@ -145,10 +145,8 @@
                     </a>
                 </div>
                 <ul class="sub-menu">
-                    <li><a href="#">Surveys</a></li>
-                    <li><a href="#">Feedback</a></li>
-                    <li><a href="#">Recognition</a></li>
-                    <li><a href="#">Rewards</a></li>
+                    <li><a href="../modules/engagement/surveys-and-feedback.php">Surveys and Feedback</a></li>
+                    <li><a href="../modules/engagement/recognition-and-rewards.php">Recognition and Rewards</a></li>
                     <li><a href="#">Grievance Handling</a></li>
                     <li><a href="#">Communication Portals</a></li>
                     <li><a href="#">Socials</a></li>

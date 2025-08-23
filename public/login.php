@@ -4,7 +4,7 @@ session_start();
 $servername = "localhost";
 $db_user = "root";
 $db_pass = "";
-$dbname = "hrms";
+$dbname = "mock";
 
 $conn = new mysqli($servername, $db_user, $db_pass, $dbname);
 if ($conn->connect_error) {

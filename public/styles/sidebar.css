@@ -252,8 +252,6 @@ html { font-size: 16px; }
     transition: opacity 180ms ease;
 }
 
-
-
 @media (max-width: 768px) {
     
     .burger { display: block; }
